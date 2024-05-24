@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Away - The Next Big Pink</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <ul class="menu">
+                <li><a href="#" class="menu-link">Мої роботи</a></li>
+                <li><a href="#" class="menu-link">Історія моїх робіт</a></li>
+                <li><a href="#" class="menu-link">Контакти</a></li>
+                <li><a href="#" class="menu-link">Мої соц мережі</a></li>
+            </ul>
+
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="hero">
+        <h1>Портфоліо з моїми<br>роботами</h1>
+        <p>Тут ви можете переглянути мої напрацювання.<br>Ці роботи були створені під час мого навчання на 4 курсі графічного дизайну.</p>
+        <a href="#" class="cta">Переглянути</a>
+
+    </section>
+    <section class="best-sellers">
+        <h2>Роботи за 3 курс коледжу</h2>
+        <ul class="photo-row">
+            <li>
+                <a href="#">
+                    <img src="bag1.png" alt="Carry-On Suitcase">
+                    <h3>Створення персонажа</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="bag2.png" alt="Carry-On Suitcase">
+                    <h3>Інтерактивна гра-абетка</h3>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="bag3.png" alt="Carry-On Suitcase">
+                    <h3>Дизайн енергетику</h3>
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+
+            <!-- Add other best-sellers here -->
+        </ul>
+    </section>
+<section class="offer">
+    <div class="offer-content">
+        <h2>Поштові марки</h2>
+        <p>Колекційна серія марок.<br>"Розстріляне відродження". Обмежений тираж.</p>
+        <a href="#" class="cta">Переглянути</a>
+    </div>
+    <img src="bag5.png" alt="Carry-On Suitcase" class="offer-image">
+</section>
+
+<section class="travel-essentials">
+    <h2>УкрПошта. "Розстріляне відродження" </h2>
+    <div class="slideshow-container">
+        <div class="slideshow">
+            <div class="photos">
+                <img src="bag6.png" alt="Packing Cube">
+                <img src="bag7.png" alt="Packing Cube">
+                <img src="bag8.png" alt="Packing Cube">
+            </div>
+
+
+
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <h3>Детальний огляд марок</h3>
+</section>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("slideshow")[0].getElementsByTagName("img");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex-1].style.display = "block";
+}
+
+function toggleAnimation(img) {
+    img.classList.toggle("animated"); // Додаємо або видаляємо клас "animated" при кожному кліку
+}
+
+</script>
+</main>
+<footer>
+    <div id="footer">
+        <div class="footer-section">
+            <h3>Карта сайту</h3>
+            <ul>
+                <li>Галерея</li>
+                <li>Історія творчості</li>
+                <li>Період створення</li>
+                <li>Мої роботи</li>
+                <li>Розташування</li>
+                <li>Запитання та відповіді</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Мої контакти</h3>
+            <ul>
+                <li>Telegram</li>
+                <li>viber</li>
+                <li>Facebook</li>
+                <li>Gmail</li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+</body>
+</html>
